@@ -12692,9 +12692,10 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 
 .nav-sidebar > .nav-item {
   margin-bottom: 0;
+  
 }
 
-.nav-sidebar > .nav-item .nav-icon {
+.nav-sidebar > .nav-item >.nav-icon {
   margin-left: .05rem;
   font-size: 1.2rem;
   margin-right: .2rem;
@@ -12715,7 +12716,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   list-style: none;
   padding: 0;
 }
-
+/*필요*/
 .nav-sidebar .nav-treeview > .nav-item > .nav-link > .nav-icon {
   width: 1.6rem;
 }

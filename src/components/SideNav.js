@@ -12,20 +12,17 @@ const SideNav = () => {
                         <img src={process.env.PUBLIC_URL + `/logo.png`} alt="EPLElogo" className="EPLELogo" />
                     </a>
                 </div>
-                <p></p>
                 <div>{/* Sidebar */}
                     <div className="sidebar">
                         {/* Sidebar Menu */}
                         <nav className="MainMenu">
-                            <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                                {/* Add icons to the links using the .nav-icon class
-         with font-awesome or any other icon font library */}
+                            <h6>MainMenu</h6>
+                            <ul className="nav nav-pills nav-sidebar flex-column">
                                 <li className="nav-item menu-open">
-                                    <a href="#" className="nav-link active">
-                                        <i className="nav-icon fas fa-tachometer-alt" />
+                                    <a href="pages/dashboard.html" className="nav-link">
+                                        <i className ='nav-icon fa-solid fa-house'></i>
                                         <p>
                                             Dashboard
-
                                         </p>
                                     </a>
 
@@ -33,11 +30,10 @@ const SideNav = () => {
                                 
                                 
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        <i className="nav-icon fas fa-edit" />
+                                    <a href="./pages/archive.html" className="nav-link">
+                                        <i className='nav-icon fas fa-edit' />
                                         <p>
                                             자료실
-                                            <i className="fas fa-angle-left right" />
                                         </p>
                                     </a>
                                     
@@ -45,8 +41,8 @@ const SideNav = () => {
                                
                                 
                                 <li className="nav-item">
-                                    <a href="pages/calendar.html" className="nav-link">
-                                        <i className="nav-icon far fa-calendar-alt" />
+                                    <a href="./pages/calendar.html" className="nav-link">
+                                        <i className='nav-icon fa-solid fa-calendar'></i>
                                         <p>
                                             Calendar
                                         </p>
@@ -55,46 +51,21 @@ const SideNav = () => {
                                 
                                 
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        <i className="nav-icon far fa-envelope" />
+                                    <a href="./pages/chat.html" className="nav-link">
+                                        <i className='nav-icon fa-regular fa-message'></i>
                                         <p>
                                             채팅메시지
-                                            <i className="fas fa-angle-left right" />
                                         </p>
                                     </a>
-                                    <ul className="nav nav-treeview">
-                                        <li className="nav-item">
-                                            <a href="pages/mailbox/mailbox.html" className="nav-link">
-                                                <i className="far fa-circle nav-icon" />
-                                                <p>Inbox</p>
-                                            </a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="pages/mailbox/compose.html" className="nav-link">
-                                                <i className="far fa-circle nav-icon" />
-                                                <p>Compose</p>
-                                            </a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="pages/mailbox/read-mail.html" className="nav-link">
-                                                <i className="far fa-circle nav-icon" />
-                                                <p>Read</p>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        <i className="nav-icon fas fa-search" />
+                                    <a href="./pages/student.html" className="nav-link">
+                                        <i className ='nav-icon fa-solid fa-user-group'></i>
                                         <p>
-                                            Search
-                                            <i className="fas fa-angle-left right" />
+                                            Student
                                         </p>
                                     </a>
-                            
                                 </li>
-                                
-
                             </ul>
                         </nav>
                         {/* /.sidebar-menu */}
