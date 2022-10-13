@@ -1,20 +1,26 @@
 .SideNavigationBar {
   /* SIDEBAR */
   position: absolute;
-  width: 250px;
+  width: 275px;
   height: 1080px;
   left: 0px;
   top: 0px;
   background: #FFFFFF;
-  border-right: 1px solid #a5a5a5;
+  border-right: 1px solid #d5d5d5;
+  position: fixed;
 }
 
 .EPLELogo {
-  position: absolute;
-  left: 40px;
-  right: 33.62%;
-  top: 37px;
-  bottom: 90.65%;
-  width: 179px;
-  height: 64px;
+  
+  width: 143px;
+  height: 49px;
+  position: static;
+}
+.brand-link{
+  margin-left: 27px;
+  margin-top: 13px;
+}
+
+.MainMenu{
+  
 }
