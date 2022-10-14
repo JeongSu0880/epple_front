@@ -1,5 +1,10 @@
 import React from 'react'
 import '../App.css'
+import {
+    Routes,
+    Route,
+    Link,
+  } from 'react-router-dom';
 
 const SideNav = () => {
     return (
@@ -8,9 +13,9 @@ const SideNav = () => {
             <aside className="SideNavigationBar">
                 <div>
                     {/* Brand Logo */}
-                    <a href="index.html" className="brand-link">
+                    <Link to="./" className="brand-link">
                         <img src={process.env.PUBLIC_URL + `/logo.png`} alt="EPLElogo" className="EPLELogo" />
-                    </a>
+                    </Link>
                 </div>
                 <div>{/* Sidebar */}
                     <div className="sidebar">
@@ -19,52 +24,52 @@ const SideNav = () => {
                             <h6>MainMenu</h6>
                             <ul className="nav nav-pills nav-sidebar flex-column">
                                 <li className="nav-item menu-open">
-                                    <a href="pages/dashboard.html" className="nav-link">
+                                    <Link to="./" className="nav-link">
                                         <i className ='nav-icon fa-solid fa-house'></i>
                                         <p>
                                             Dashboard
                                         </p>
-                                    </a>
+                                    </Link>
 
                                 </li>
                                 
                                 
                                 <li className="nav-item">
-                                    <a href="./pages/archive.html" className="nav-link">
+                                    <Link to="./components/Archive" className="nav-link">
                                         <i className='nav-icon fas fa-edit' />
                                         <p>
                                             자료실
                                         </p>
-                                    </a>
+                                    </Link>
                                     
                                 </li>
                                
                                 
                                 <li className="nav-item">
-                                    <a href="./pages/calendar.html" className="nav-link">
+                                    <Link to="./components/Calendar" className="nav-link">
                                         <i className='nav-icon fa-solid fa-calendar'></i>
                                         <p>
                                             Calendar
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 
                                 
                                 <li className="nav-item">
-                                    <a href="./pages/chat.html" className="nav-link">
+                                    <Link to="./components/Chat" className="nav-link">
                                         <i className='nav-icon fa-regular fa-message'></i>
                                         <p>
                                             채팅메시지
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="./pages/student.html" className="nav-link">
+                                    <Link to="./components/Students" className="nav-link">
                                         <i className ='nav-icon fa-solid fa-user-group'></i>
                                         <p>
                                             Student
                                         </p>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </nav>

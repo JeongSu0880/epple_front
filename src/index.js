@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import ReactDom from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
+ReactDom.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+    document.querySelector('#root')
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

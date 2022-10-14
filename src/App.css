@@ -53,3 +53,14 @@
   font-style: normal;
 }
 
+.nav-item:hover {
+  background: #40C0CB24;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 16px;
+}
+
+.nav-item:hover p,
+.nav-item:hover .nav-icon {
+  color: #1D8993;
+}

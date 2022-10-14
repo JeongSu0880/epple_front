@@ -2,19 +2,44 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SideNav from './components/SideNav';
-import Home from './components/Home';
-import '@mobiscroll/react/dist/css/mobiscroll.min.css';
-import { Eventcalendar, getJson, toast, localeKo } from '@mobiscroll/react';
+//import '@mobiscroll/react/dist/css/mobiscroll.min.css';
+//import { Eventcalendar, getJson, toast, localeKo } from '@mobiscroll/react';
+import { Route, Routes, Link, BrowserRouter } from 'react-router-dom';
+import Archive from './components/Archive';
+//import { Calendar } from '@fullcalendar/core';
+import Chat from './components/Chat';
+import Students from './components/Students';
+import Dashboard from './components/Dashboard';
+import Calendar from './components/Calendar';
+
 
 function App() {
-    return(
-    <>
-    <Header />
-    <Home />
-    <SideNav />
-    <Footer />
-
-    </>
+    return (
+        <>
+            {/* <BrowserRouter>
+                
+                <Routes>
+                    <Route path='/'>
+                        <Dashboard />
+                    </Route>
+                    <Route path='/components/Students'>
+                        <Students />
+                    </Route>
+                    <Route path='/components/Archive'>
+                        <Archive />
+                    </Route>
+                    <Route path='/components/Calendar'>
+                        <Calendar />
+                    </Route>
+                    <Route path='/components/Chat'>
+                        <Chat />
+                    </Route>
+                </Routes>
+            </BrowserRouter> */}
+            <Header />
+            <SideNav />
+            <Footer />
+        </>
     );
 
     // const [myEvents, setEvents] = React.useState([]);
@@ -24,13 +49,13 @@ function App() {
     //         setEvents(events);
     //     }, 'jsonp');
     // }, []); //데이터 set
-    
+
     // const onEventClick = React.useCallback((event) => {
     //     toast({
     //         message: event.event.title
     //     });
     // }, []);
-    
+
     // const view = React.useMemo(() => {
     //     return {
     //         schedule: { type: 'week' }
