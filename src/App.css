@@ -1,56 +1,7 @@
-.SideNavigationBar {
-  /* SIDEBAR */
-  position: absolute;
-  width: 250px;
-  height: 1080px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
-  border-right: 1px solid #f0f0f0;
-  position: fixed;
-}
-
-.EPLELogo {
-  width: 120px;
-  height: 41px;
-  position: static;
-}
-
-.brand-link {
-  margin-left: 40px;
-  margin-top: 15px;
-}
-
-.nav {
-  padding-top: 0px;
-}
-
-.nav .nav-item .nav-link .nav-icon {
-  position: relative;
-  align-items: baseline;
-  line-height: 50px;
-  padding-left: 25px;
-}
-
-.nav-link p {
-  font-size: 14px;
-  position: absolute;
-  padding-left: 35px;
-  line-height: 50px;
-  font-family: 'Poppins';
-  font-style: normal;
-}
-
-.nav-link {
-  height: 60px;
-}
-
-.MainMenu>h6 {
-  margin-left: 40px;
-  padding-top: 40px;
-  color: #D7D7D7;
-  font-family: 'Poppins';
-  font-style: normal;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 .nav-item:hover {
