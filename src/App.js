@@ -1,44 +1,29 @@
-import React from 'react';
-import '@mobiscroll/react/dist/css/mobiscroll.min.css';
-import { Eventcalendar, getJson, toast, localeKo } from '@mobiscroll/react';
+import React from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import "./App.css";
+import Sidebar from './components/Sidebar';
+import Dashboard from './pages/Dashboard';
+import Chatting from './pages/Chatting';
+import Calendar from './pages/Calendar';
+import Archive from './pages/Archive';
+import Mystudents from './pages/Mystudents';
+import Home from './pages/Home';
 
 function App() {
-
-    const [myEvents, setEvents] = React.useState([]);
-
-    React.useEffect(() => {
-        getJson('https://trial.mobiscroll.com/events/?vers=5', (events) => {
-            setEvents(events);
-        }, 'jsonp');
-    }, []);
-    
-    const onEventClick = React.useCallback((event) => {
-        toast({
-            message: event.event.title
-        });
-    }, []);
-    
-    const view = React.useMemo(() => {
-        return {
-            schedule: { type: 'week' }
-        };
-    }, []);
-
     return (
-        <Eventcalendar
-            theme="ios" 
-            themeVariant="light"
-            clickToCreate={true}
-            dragToCreate={true}
-            dragToMove={true}
-            dragToResize={true}
-            eventDelete={true}
-            locale={localeKo}
-            data={myEvents}
-            view={view}
-            onEventClick={onEventClick}
-       />
-    ); 
+        <BrowserRouter>
+        <Sidebar>
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/dashboard" element={<Dashboard />}/>
+                <Route path="/calendar" element={<Calendar />}/>
+                <Route path="/chatting" element={<Chatting />}/>
+                <Route path="/archive" element={<Archive />}/>
+                <Route path="/mystudents" element={<Mystudents />}/>
+            </Routes>
+            </Sidebar>
+        </BrowserRouter>
+    )
 }
 
 export default App;
