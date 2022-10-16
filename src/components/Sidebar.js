@@ -5,10 +5,11 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ArchiveIcon from '@mui/icons-material/Archive';
 import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
-import { NavLink } from 'react-router-dom';
+import { Link,NavLink } from 'react-router-dom';
 
 
 const Sidebar = ({children}) => {
+  
   const menuItem = [
     {
       name:"Dashboard",
@@ -40,11 +41,12 @@ const Sidebar = ({children}) => {
     <div className="container">
       <div className = "sidebar">
         <div className = "top_section">
-          <img className="logo_png" src="img/TabLogo.png" />
-          <h1 className="logo">EPLE</h1>
+          <Link to = "./" >
+          <img className="logo" src="img/logo.png" alt="logo"/>
+          </Link>
         </div>
         <div className="mainmenu">
-          <h5>Main Menu</h5>
+          <h6>Main Menu</h6>
         </div>
         {
           menuItem.map((item, index) => (
